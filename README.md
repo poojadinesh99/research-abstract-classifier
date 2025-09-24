@@ -1,16 +1,35 @@
 # Research Abstract Classifier
 
-A professional machine learning pipeline for classifying research abstracts into predefined categories using Natural Language Processing and scikit-learn.
+[![CI/CD Pipeline](https://github.com/poojadinesh99/research-abstract-classifier/actions/workflows/ci.yml/badge.svg)](https://github.com/poojadinesh99/research-abstract-classifier/actions/workflows/ci.yml)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://hub.docker.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 
-## Features
+A production-ready machine learning pipeline for classifying research abstracts into academic disciplines using Natural Language Processing, scikit-learn, and FastAPI. This project demonstrates end-to-end ML engineering practices including data preprocessing, model training, RESTful API development, containerization, and automated testing.
 
-- **Text Preprocessing**: Advanced text cleaning with tokenization, lowercasing, stopword removal, and TF-IDF vectorization
-- **Machine Learning**: Logistic Regression classifier with scikit-learn
-- **Model Persistence**: Serialized models and vectorizers using joblib
-- **REST API**: FastAPI-powered web service for real-time predictions
-- **Containerization**: Docker support for easy deployment
-- **Testing**: Comprehensive test suite with pytest
-- **Evaluation Metrics**: Accuracy and F1-score reporting
+## 🏗️ Architecture & Technical Highlights
+
+### **Core ML Pipeline**
+- **Advanced NLP Preprocessing**: Custom text cleaning, tokenization, stopword removal, and TF-IDF vectorization
+- **Scikit-learn Integration**: Logistic Regression with hyperparameter tuning and cross-validation
+- **Model Persistence**: Efficient serialization using joblib for production deployment
+- **Label Encoding**: Robust categorical encoding for multi-class classification
+
+### **Production Features**
+- **RESTful API**: FastAPI-powered web service with automatic OpenAPI documentation
+- **Real-time Inference**: Sub-second prediction latency with confidence scoring
+- **Containerization**: Docker support with multi-stage builds for optimized deployment
+- **CI/CD Pipeline**: Automated testing across Python versions with GitHub Actions
+- **Comprehensive Testing**: Unit tests, integration tests, and API endpoint validation
+- **Error Handling**: Robust exception handling with meaningful error responses
+
+### **Key Capabilities**
+- **Multi-class Classification**: 6 academic disciplines (Biology, Chemistry, CS, Mathematics, Medicine, Physics)
+- **Confidence Scoring**: Probability-based confidence measures for predictions
+- **Batch Processing**: Support for both single and batch inference
+- **Model Evaluation**: Detailed performance metrics including accuracy, F1-score, and confusion matrices
+- **Scalable Architecture**: Designed for horizontal scaling and cloud deployment
 
 ## Dataset Information
 
